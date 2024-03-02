@@ -1,3 +1,6 @@
-const server = import('../dist/angular-vercel-ssr/server/server.mjs');
+async function loadServer() {
+    const serverModule = await import('../dist/apps/angular-vercel-ssr/server/server.mjs');
+    return serverModule.app;
+}
 
-server.app();
+export default loadServer().then(app => app());
