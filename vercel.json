@@ -9,7 +9,7 @@
     }
   ],
   "functions": {
-    "api/index.js": {
+    "api/index.cjs": {
       "includeFiles": "dist/angular-vercel-ssr/**"
     }
   }
